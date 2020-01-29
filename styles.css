@@ -12,13 +12,36 @@ button {
 }
 
 .nav {
-  width: 50px;
+  width: 75px;
   float: left;
   background-color: white;
 }
 
+.elephant {
+  text-align: center;
+  margin-bottom: 200px;
+  margin-top: 20px;
+}
+
+.el_img {
+  height: 60px;
+
+}
+
 .nav img {
-  height: 30px;
+  width: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.navgroup {
+  text-align: center;
+  top: 40px;
+}
+
+.navgroup img {
+  height: 40px;
+  padding: 10px;
 }
 
 .account {
@@ -28,6 +51,7 @@ button {
 
 .welcome {
   background: linear-gradient(#8ED1DC, #E3F4F6);
+
 }
 
 .card img {
