@@ -1,7 +1,40 @@
-html {
-  height: 100%;
+body {
+  height: 100vh;
+  background-color: #F5F5F5;
+  margin: 0px;
 }
 
-.navpic {
-  height: 90px;
+section {
+  height: 100%;
+}
+button {
+  background-color: #1CA3BA;
+}
+
+.nav {
+  width: 50px;
+  float: left;
+  background-color: white;
+}
+
+.nav img {
+  height: 30px;
+}
+
+.account {
+  display: inline-block;
+  width: auto;
+}
+
+.welcome {
+  background: linear-gradient(#8ED1DC, #E3F4F6);
+}
+
+.card img {
+  height: 20px;
+}
+
+.transactions {
+  width: auto;
+  float: right;
 }
