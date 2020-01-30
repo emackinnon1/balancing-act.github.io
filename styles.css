@@ -5,6 +5,7 @@ body {
   background-color: #F5F5F5;
   margin: 0px;
   font-family: Biryani;
+  color: #363636;
 }
 
 section {
@@ -24,16 +25,15 @@ button {
   font-size: 14px;
 }
 
-.accounts_title {
-  display: inline-block;
-  font-size: 20px;
-}
-
 ul {
   list-style-type: none;
 }
 
-/* navbar */
+main {
+  position: relative;
+}
+
+/* navbar -------------------------------------*/
 
 .nav {
   width: 75px;
@@ -67,7 +67,12 @@ ul {
   padding: 10px;
 }
 
-/* account */
+/* account ----------------------------------*/
+
+.accounts_title {
+  display: inline-block;
+  font-size: 20px;
+}
 
 .account {
   display: inline-block;
@@ -79,12 +84,13 @@ ul {
   margin-top: 35px;
 }
 
-.welcome {
+#welcome {
   background: linear-gradient(to right, #8ED1DC, #E3F4F6);
   padding: 25px;
+  border-radius: 4px;
 }
 
-.close {
+#close {
   height: 8px;
   float: right;
   position: relative;
@@ -92,7 +98,6 @@ ul {
 
 .account_summary_display {
   width: 100%;
-
 }
 
 ul {
@@ -111,6 +116,7 @@ ul {
   display: inline-block;
   background-color: white;
   text-align: justify;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .05);
 }
 
 .account_sum_li.last {
@@ -137,29 +143,65 @@ li {
 
 .card img {
   height: 30px;
+  position: relative;
+  top: 5px;
 }
 
 .card {
   background-color: white;
   margin-top: 20px;
-  padding: 15px;
+  padding: 12px;
   position: relative;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .05);
+
 }
 
 .card > .bank {
   position: absolute;
   left: 105px;
+  top: 20px;
 }
 
 .card > .acc_type {
   position: absolute;
-  left: 450px;}
+  left: 450px;
+  top: 20px;
+}
 
-/* transaction */
+/* transaction ---------------------------*/
 
 .transactions {
-  width: 600px;
+  position: relative;
+  right: 100px;
+  height: 470px;
+  width: 500px;
+  padding: 25px;
   margin-top: 100px;
+  margin-left: 50px;
   float: right;
   background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .05);
+}
+
+.transac_title > span {
+  font-size: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  height: 435px;
+}
+
+tr {
+  padding-top: 15px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+td {
+  position: relative;
+  padding-right: 52px;
+}
+
+.outflow_col {
+  padding-right: 0;
 }
