@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
+
+<!-- NAVBAR SECTION -->
     <section class="nav">
       <div class="elephant">
         <img class="el_img" src="assets/images/elephant.svg" alt="">
@@ -16,60 +18,68 @@
         <img src="assets/images/profile.svg" alt="">
       </div>
     </section>
-
+<!-- ACCOUNT SECTION -->
     <section class="account">
       <div class="top">
         <h1 class="title">Balancing Act</h1>
-        <h3 class="welcome">Welcome, Oscar!</h3>
+        <h3 class="welcome">Welcome, Oscar!
+          <img class="close" src="assets/images/close.svg" alt="">
+        </h3>
+      <div class="account_summary_display">
         <ul class="account_summary">
-          <li class="income">INCOME
-            <span class="income_amount">$2,119.12</span>
+          <li class="account_sum_li first">
+              <p class="acc_sum_label">INCOME</p>
+              <p class="acc_sum_amount">$2,119.12</p>
           </li>
-          <li class="expenses">EXPENSES
-            <span class="expense_amount">$420.54</span>
+          <li class="account_sum_li">
+              <p class="acc_sum_label">EXPENSES</p>
+              <p class="acc_sum_amount">$420.54</p>
           </li>
-          <li class="cred_score">CREDIT SCORE
-            <span class="cred_score_amount">673</span>
+          <li class="account_sum_li last">
+              <p class="acc_sum_label">CREDIT SCORE</p>
+              <p class="acc_sum_amount">673</p>
           </li>
         </ul>
       </div>
+    </div>
       <div class="account_list">
-        <div class="account_title">
-          <span>Accounts</span>
-          <button type="button" name="man_acc">MANAGE ACCOUNTS</button>
+        <div class="account_list_header">
+          <span class="accounts_title">Accounts</span>
+          <button type="button" name="man_acc"><a class="btn">MANAGE ACCOUNTS</a></button>
         </div>
-        <div class="accounts_display">
+          <section class="accounts_display">
             <div class="card">
-              <img src="assets/images/checking.svg" alt="">
-              <span>Wells Fargo</span>
-              <span>Checking</span>
+              <td><img src="assets/images/checking.svg" alt=""></td>
+              <span class="bank">Wells Fargo</span>
+              <span class="acc_type">Checking</span>
+            </div>
             <div class="card">
               <img src="assets/images/savings.svg" alt="">
-              <span>Wells Fargo</span>
-              <span>Savings</span>
+              <span class="bank">Wells Fargo</span>
+              <span class="acc_type">Savings</span>
             </div>
+            <section class="card">
+              <img src="assets/images/credit-card.svg" alt="">
+              <span class="bank">Amazon Credit</span>
+              <span class="acc_type">Credit Card</span>
+            </section>
             <div class="card">
               <img src="assets/images/credit-card.svg" alt="">
-              <span>Amazon Credit</span>
-              <span>Credit Card</span>
+              <span class="bank">Southwest Credit</span>
+              <span class="acc_type">Credit Card</span>
             </div>
-            <div class="card">
-              <img src="assets/images/credit-card.svg" alt="">
-              <span>Southwest Credit</span>
-              <span>Credit Card</span>
-            </div>
+          </section>
         </div>
-      </div>
-    </section>
-
+      </section>
+<!-- TRANSACTIONS SECTION -->
     <section class="transactions">
       <div class="transac_title">
         <span>Recent Transactions</span>
-        <button type="button" name="button">NEW TRANSACTION</button>
+        <button type="button" name="button"><a class="btn">NEW TRANSACTION</a></button>
       </div>
       <div class="transac_list">
         <div class="transac_list_columns">
-          <span >Date</span>
+          <span>Date</span>
           <span>Payee</span>
           <span>Inflow</span>
           <span>Outflow</span>
