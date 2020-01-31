@@ -150,17 +150,16 @@
     </section>
    </main>
 
-   <main class="main2">
-     <section class="transac_big_list shadow">
-       <div class="transac_big_header">
-         <h1 class="transac_big_title">Transactions</h1>
-          <div class="transac_big_buttons">
-           <button class="transac_big_button all" type="button" name="button">ALL</button>
-           <button class="transac_big_button flow" type="button" name="button">INFLOW</button>
-           <button class="transac_big_button flow" type="button" name="button">OUTFLOW</button>
-         </div>
+   <main class="main2 hidden">
+     <div class="transac_big_header">
+       <h1 class="transac_big_title">Transactions</h1>
+        <div class="transac_big_button_group">
+         <button class="transac_big_button all" type="button" name="button">ALL</button>
+         <button class="transac_big_button flow" type="button" name="button">INFLOW</button>
+         <button class="transac_big_button flow" type="button" name="button">OUTFLOW</button>
        </div>
-
+     </div>
+     <section class="transac_big_list shadow">
        <div class="transac_big_table">
           <table>
             <tr>
@@ -278,12 +277,12 @@
        </div>
      </section>
 
-     <div class="new_transac">
+     <section class="new_transac">
        <h2 class="new_transac_title">New Transaction</h2>
        <form class="new_transac_form" action="index.html" method="post">
 
        </form>
-     </div>
+     </section>
    </main>
 
    <script src="main.js" charset="utf-8" defer></script>
