@@ -28,12 +28,10 @@ function handleNavClick(e) {
 // add click listener to elephant with below function
 
 function toggleMainViews() {
-  if (main2.style.display = 'none') {
-    main1.style.display === 'initial';
-  } else if (main1.style.display = 'none') {
-    main2.style.display = 'initial';
-  }
+  main2.classList.toggle('show');
+  main1.classList.toggle('hidden');
 }
 
 navGroup.addEventListener('click', handleNavClick);
 close.addEventListener('click', hideBanner);
+elephant.addEventListener('click', toggleMainViews);
