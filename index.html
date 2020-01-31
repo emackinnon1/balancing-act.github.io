@@ -13,30 +13,36 @@
         <img class="el_img" src="assets/images/elephant.svg" alt="">
       </div>
       <div class="navgroup">
-        <img src="assets/images/dashboard.svg" alt="">
-        <img src="assets/images/transactions.svg" alt="">
-        <img src="assets/images/profile.svg" alt="">
+        <div class="nav_butts">
+          <img src="assets/images/dashboard.svg" alt="">
+        </div>
+        <div class="nav_butts">
+          <img src="assets/images/transactions.svg" alt="">
+        </div>
+        <div class="nav_butts">
+          <img src="assets/images/profile.svg" alt="">
+        </div>
       </div>
     </section>
-<main>
+<main class="main1">
 <!-- ACCOUNT SECTION -->
     <section class="account">
       <div class="top">
         <h1 class="title">Balancing Act</h1>
-        <h3 id="welcome">Welcome, Oscar!
-          <img id="close" src="assets/images/close.svg" alt="">
+        <h3 class="welcome">Welcome, Oscar!
+          <img class="close" src="assets/images/close.svg" alt="">
         </h3>
       <div class="account_summary_display">
         <ul class="account_summary">
-          <li class="account_sum_li first">
+          <li class="account_sum_li first shadow">
               <p class="acc_sum_label">INCOME</p>
               <p class="acc_sum_amount">$2,119.12</p>
           </li>
-          <li class="account_sum_li">
+          <li class="account_sum_li shadow">
               <p class="acc_sum_label">EXPENSES</p>
               <p class="acc_sum_amount">$420.54</p>
           </li>
-          <li class="account_sum_li last">
+          <li class="account_sum_li last shadow">
               <p class="acc_sum_label">CREDIT SCORE</p>
               <p class="acc_sum_amount">673</p>
           </li>
@@ -49,22 +55,22 @@
           <button type="button" name="man_acc"><a class="btn">MANAGE ACCOUNTS</a></button>
         </div>
           <section class="accounts_display">
-            <div class="card">
+            <div class="card shadow">
               <td><img src="assets/images/checking.svg" alt=""></td>
               <span class="bank">Wells Fargo</span>
               <span class="acc_type">Checking</span>
             </div>
-            <div class="card">
+            <div class="card shadow">
               <img src="assets/images/savings.svg" alt="">
               <span class="bank">Wells Fargo</span>
               <span class="acc_type">Savings</span>
             </div>
-            <section class="card">
+            <section class="card shadow">
               <img src="assets/images/credit-card.svg" alt="">
               <span class="bank">Amazon Credit</span>
               <span class="acc_type">Credit Card</span>
             </section>
-            <div class="card">
+            <div class="card shadow">
               <img src="assets/images/credit-card.svg" alt="">
               <span class="bank">Southwest Credit</span>
               <span class="acc_type">Credit Card</span>
@@ -74,7 +80,7 @@
       </section>
 
 <!-- TRANSACTIONS SECTION -->
-    <section class="transactions">
+    <section class="transactions shadow">
       <div class="transac_title">
         <span>Recent Transactions</span>
         <button type="button" name="button"><a class="btn">NEW TRANSACTION</a></button>
@@ -142,6 +148,142 @@
         </tr>
       </table>
     </section>
+   </main>
+
+   <main class="main2">
+     <section class="transac_big_list shadow">
+       <div class="transac_big_header">
+         <h1 class="transac_big_title">Transactions</h1>
+          <div class="transac_big_buttons">
+           <button class="transac_big_button all" type="button" name="button">ALL</button>
+           <button class="transac_big_button flow" type="button" name="button">INFLOW</button>
+           <button class="transac_big_button flow" type="button" name="button">OUTFLOW</button>
+         </div>
+       </div>
+
+       <div class="transac_big_table">
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Account</th>
+              <th>Payee</th>
+              <th>Inflow</th>
+            </tr>
+            <tr>
+              <td>10-25-19</td>
+              <td>Credit Card</td>
+              <td>Target</td>
+              <td>-</td>
+              <td>$82.35</td>
+            </tr>
+            <tr>
+              <td>10-24-19</td>
+              <td>Credit Card</td>
+              <td>Express</td>
+              <td>-</td>
+              <td>$212.24</td>
+            </tr>
+            <tr>
+              <td>10-22-19</td>
+              <td>Checking</td>
+              <td>Paycheck</td>
+              <td>$1319.12</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>10-21-19</td>
+              <td>Credit Card</td>
+              <td>Trader Joe's</td>
+              <td>-</td>
+              <td>$54.92</td>
+            </tr>
+            <tr>
+              <td>10-20-19</td>
+              <td>Credit Card</td>
+              <td>Shell</td>
+              <td>-</td>
+              <td>$46.23</td>
+            </tr>
+            <tr>
+              <td>10-19-19</td>
+              <td>Savings</td>
+              <td>Rent</td>
+              <td>$800.00</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>10-19-19</td>
+              <td>Checking</td>
+              <td>Hapa Sushi</td>
+              <td>-</td>
+              <td>$13.97</td>
+            </tr>
+            <tr>
+              <td>10-18-19</td>
+              <td>Credit Card</td>
+              <td>PigTrain</td>
+              <td>-</td>
+              <td>$4.83</td>
+            </tr>
+            <tr>
+              <td>10-18-19</td>
+              <td>Checking</td>
+              <td>RTD</td>
+              <td>-</td>
+              <td>$6.00</td>
+            </tr>
+            <tr>
+              <td>10-24-19</td>
+              <td>Credit Card</td>
+              <td>Express</td>
+              <td>-</td>
+              <td>$212.24</td>
+            </tr>
+            <tr>
+              <td>10-24-19</td>
+              <td>Credit Card</td>
+              <td>Express</td>
+              <td>-</td>
+              <td>$212.24</td>
+            </tr>
+            <tr>
+              <td>10-24-19</td>
+              <td>Credit Card</td>
+              <td>Express</td>
+              <td>-</td>
+              <td>$212.24</td>
+            </tr>
+            <tr>
+              <td>10-24-19</td>
+              <td>Credit Card</td>
+              <td>Express</td>
+              <td>-</td>
+              <td>$212.24</td>
+            </tr>
+            <tr>
+              <td>10-24-19</td>
+              <td>Credit Card</td>
+              <td>Express</td>
+              <td>-</td>
+              <td>$212.24</td>
+            </tr>
+            <tr>
+              <td>10-24-19</td>
+              <td>Credit Card</td>
+              <td>Express</td>
+              <td>-</td>
+              <td>$212.24</td>
+            </tr>
+          </table>
+       </div>
+     </section>
+
+     <div class="new_transac">
+       <h2 class="new_transac_title">New Transaction</h2>
+       <form class="new_transac_form" action="index.html" method="post">
+
+       </form>
+     </div>
    </main>
 
    <script src="main.js" charset="utf-8" defer></script>
