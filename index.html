@@ -14,10 +14,10 @@
       </div>
       <div class="navgroup">
         <div class="nav_butts">
-          <img src="assets/images/dashboard.svg" alt="">
+          <img class="nav_dashboard" src="assets/images/dashboard.svg" alt="">
         </div>
         <div class="nav_butts">
-          <img src="assets/images/transactions.svg" alt="">
+          <img class="nav_transactions" src="assets/images/transactions.svg" alt="">
         </div>
         <div class="nav_butts">
           <img src="assets/images/profile.svg" alt="">
@@ -151,7 +151,8 @@
    </main>
 
    <main class="main2 hidden">
-     <div class="transac_big_header">
+     <section class="transac_big">
+      <div class="transac_big_header">
        <h1 class="transac_big_title">Transactions</h1>
         <div class="transac_big_button_group">
          <button class="transac_big_button all" type="button" name="button">ALL</button>
@@ -167,6 +168,7 @@
               <th>Account</th>
               <th>Payee</th>
               <th>Inflow</th>
+              <th>Outflow</th>
             </tr>
             <tr>
               <td>10-25-19</td>
@@ -276,11 +278,38 @@
           </table>
        </div>
      </section>
+   </section>
 
-     <section class="new_transac">
+     <section class="new_transac shadow">
        <h2 class="new_transac_title">New Transaction</h2>
        <form class="new_transac_form" action="index.html" method="post">
+        <fieldset>
+          <h5>Type of Transaction:</h5>
+          <select class="type_of_transac shadow" name="">
+            <option value="expense" selected>Expense</option>
+          </select>
 
+          <h5>Category:</h5>
+          <select class="category shadow" name="">
+            <option value="">-Select One-</option>
+          </select>
+
+          <h5>Account from:</h5>
+          <select class="account_from shadow" name="">
+            <option value="">-Select One-</option>
+          </select>
+
+          <h5>Payee:</h5>
+          <input type="text" name="" value="">
+
+          <h5>Outflow</h5>
+          <input type="text" name="" value="">
+
+          <h5>Category</h5>
+          <input type="text" name="" value="">
+
+          <button class="log_expense" type="button" name="button">Log Expense</button>
+        </fieldset>
        </form>
      </section>
    </main>
