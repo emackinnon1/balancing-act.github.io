@@ -19,6 +19,7 @@ button {
   float: right;
   border-radius: 20px;
   padding: 7px;
+  border: 2px solid #1CA3BA;
 }
 
 button:hover {
